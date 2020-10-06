@@ -5,9 +5,9 @@
         <div class="container">
             <h1>Welcome to YelpCamp!</h1>
             <p>View our hand-picked campgrounds from all over the world</p>
-            <p>
+            <div>
                 <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add new campground</a>
-            </p>
+            </div>
         </div>
     </header>
 
@@ -19,6 +19,9 @@
                     <div class="caption text-center">
                         <h4><%= c.name%></h4>
                     </div>
+                    <p class="text-center">
+                        <a href="/campgrounds/<%= c._id %>" class="btn btn-primary">More Info</a>
+                    </p>
                 </div>
             </div>
         <% }) %>
